@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="background">
+
+<div class="nav">
+    <a class="a" active href="#">HOME</a>
+    <a class="b" href="#">ABOUT ME</a>
+    <a class="c" href="#">MY PICS</a>
+    <a class="d" href="#">contact</a>
+</div>
+
+<div class="content">
+
+	<div class="home">
+		<h1>I am AB devilliers</h1>
+		<h3>World class Cricketer</h3>
+	</div>
+
+	<div class="aboutus">
+		<p><b>Hello Friends</b>,<br>
+			<br>
+		Welcome to <b>AB Devilliers's Aotubiography</b>.<br>
+                                                              <br>
+		Abraham Benjamin de Villiers (born 17 February 1984), commonly known as AB de Villiers, is a former South African international cricketer. Often regarded as one of the most finest batsman of his generation,[citation needed] he plays for Titans in South African domestic cricket and Royal Challengers Bangalore in the Indian Premier League.<br>
+
+                                                              <br>
+        De Villiers began his international career as a wicket-keeper/batsman (returning to the role for a few years in mid-career), but he has played most often solely as a batsman. He could bat at various positions in the batting order but predominantly in the middle-order. Noted as one of the most innovative batsmen in the modern game, de Villiers is noted for many unorthodox shots behind the wicket-keeper and slips.[1] He made his international debut in a Test match against England from 2004 and first played an ODI in early 2005. His debut in Twenty20 International cricket came in 2006. As of 2016, he has passed 8,000 runs in both Test and ODI cricket and has a batting average of over fifty in both forms of the game. He is also the only batsman in ODI cricket to have completed a trio of 5000+ runs, 50+ average and 100+ strike rate in his career.[2] As of May 2018, from the date of his international debut onwards, he has scored 20,014 runs in international cricket. Within the same period he lies just second behind Kumar Sangakkara.[3]<br>
+         <br>
+
+        AB De Villiers captained South Africa in all formats, but since his injuries, he stepped down from Test captaincy and continued in ODI and T20 . However, with defeats in the 2017 ICC Champions Trophy and England series, he stepped down from ODI and T20 captaincy as well.[4] On 23 May 2018, he announced that he was retiring from all forms of international cricket.[5][6][7] </p>
+	</div>
+
+    <div class = "gallary">
+		<h1>Hello I am GALLARY</h1>
+		<div class="image">
+			<img src="images/abd1.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd2.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd3.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd4.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd5.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd6.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd7.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd8.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd9.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/abd10.jpg"/>
+		</div>
+
+	</div>
+
+	<div class="contactus">
+		<div class="contactform">
+			<form action="index.html"method="post">
+             <input type="text" name=""  class="inputtext"  value="First name">
+             <input type="text" name=""  class="inputtext" value ="Last name">
+              <input type="text" name=""  class="inputtext"  value ="Your Email">
+              <textares cols="4" rows="6" class="inputmessage" >Your Messages...!!!
+              </textares>
+              <input type="button" name="" class="submitbutton" value="Submit">
+				
+			</form>
+		</div>
+	</div>
+
+</div>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('a').click(function(){
+            //alert("i am click");
+            var selected= $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+		});
+
+        var $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $home = $('.home'),
+        $aboutus = $('.aboutus'),
+        $gallary = $('.gallary'),
+        $contactus= $('.contactus');
+
+        $a.click(function(){
+        	$home.fadeIn();
+        	$aboutus.fadeOut();
+        	$gallary.fadeOut();
+        	$contactus.fadeOut();
+        });
+        $b.click(function(){
+        	$aboutus.fadeIn();
+        	$home.fadeOut();
+        	$gallary.fadeOut();
+        	$contactus.fadeOut();
+        });
+        $c.click(function(){
+        	$gallary.fadeIn();
+            $home.fadeOut();
+            $aboutus.fadeOut();
+        	$contactus.fadeOut();
+        });
+        $d.click(function(){
+        	$contactus.fadeIn();
+        	$home.fadeOut();
+        	$aboutus.fadeOut();
+        	$gallary.fadeOut();
+        });
+
+	});
+</script>
+</body>
+</html>	
